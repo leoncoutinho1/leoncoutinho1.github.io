@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Organização Layout e Tags Semânticas</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;	
+		}
+		body {
+			width: 90%;
+			margin: 0 auto;
+		}
+		header {
+			background-color: brown;
+		}
+		header h1 {
+			padding-bottom: 15px;
+		}
+		nav {
+			background-color: yellowgreen;
+			padding: 10px 0;
+		}
+		nav ul {
+			list-style: none;
+			display: flex;
+		}
+		nav ul li {
+			margin: 0 5px;
+		}
+		main {
+			display: flex;
+		}
+		section {
+			display: inline;
+			width: 50%;
+			padding: 5px;
+		}
+		article {
+			padding: 5px;
+		} 
+		#article_header {
+			background-color: lightgreen;
+		}
+		#article_body {
+			padding: 5px;
+			background-color: violet;
+			text-align: justify;
+		}
+		#article_footer {
+			background-color: blueviolet;
+		}
+		aside {
+			display: inline;
+			flex-grow: 1;
+			background-color: cornflowerblue;
+			width: 50%;
+		}
+		footer {
+			background-color: blue;
+			padding-bottom: 30px;
+		}
+		footer a {
+			background-color: aquamarine;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Título do site</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a>Link</a></li>
+			<li><a>Link</a></li>
+			<li><a>Link</a></li>
+			<li><a>Link</a></li>
+			<li><a>Link</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<article>
+				<div id="article_header">
+					<h3>Título do artigo</h3>
+					<p>29/09/2021</p>
+				</div>
+				<div id="article_body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quo sit quae quidem dicta qui error quibusdam, similique consectetur nobis, obcaecati officia alias ea deserunt eveniet facere? Cumque, esse velit!</p>
+				</div>
+				<div id="article_footer">
+					Por Fulano
+				</div>
+			</article>
+		</section>
+		<aside>
+			
+		</aside>
+	</main>
+	<footer>
+		<a>IF Fluminense - DGTI</a>
+	</footer>
+</body>
+</html>
