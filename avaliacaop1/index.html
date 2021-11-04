@@ -4,7 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Avaliação P1 - Desevolvimento de Aplicações Hipermídias</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<link rel="stylesheet" href="./index.css"/>
 </head>
@@ -63,34 +66,94 @@
 			</ul>
 		</aside>
 		<section class="artigos">
-			<article>
-				<div class="artigo_titulo">
-					<h3>What's new</h3>
-					<a href="" class="atalho_artigo">More news</a>
-					<i class="bi bi-caret-right-square"></i>
+			<article class="artigo">
+				<div class="artigo_titulo clearfix">
+						<h2>What's new</h2>
+						<i class="bi bi-caret-right-square"></i>
+						<a href="" class="atalho_artigo">More news</a>
 				</div>
 				<div class="artigo_conteudo">
-					<div class="conteudo_esquerda">
-						<img src="" alt="" id="imagem_artigo">
+					<img src="./iff2.png" alt="" id="imagem_artigo" class="linha1 coluna1">
+					<div class="details linha1 coluna2">
+						<a href="" class="">78 school inspection reports published</a>
+						<p>19 January 2012</p>
+						<p class="">The reports comprise 29 whole-school evaluations (WSEs) of primary school, 8 WSEs of post-primary schools, 38 subjects inspecions and 3 programme evaluations.</p>
+					</div>
+					<p class="linha2 coluna1">13 January 2012</p>
+					<p class="linha3 coluna1">09 January 2012</p>
+					<p class="linha4 coluna1">29 December 2011</p>
+					<a href="" class="linha2 coluna2">DEIS Evaluation reports published</a>
+					<a href="" class="linha3 coluna2">Minister Cannon launched Butchery Training Programme</a>
+					<a href="" class="linha4 coluna2">Minister Quinn welcomes Second Level Students' Union proposals on naming the reformed junior cycle awards</a>
+				</div>
+			</article>
+			<article class="artigo">
+				<div class="artigo_titulo clearfix">
+					<h2>Newsticker</h2>
+					<i class="bi bi-pause-btn"></i>
+				</div>
+				<div class="artigo_conteudo" id="conteudo_newsletter">
+					<p class="linha1 coluna1">Submission entry for the SOLAS Conultation Paper closes at 5pm on Friday, 20th January 2012.</p>
+					<div class="linha1 coluna2">
+						<span><i class="bi bi-arrow-up-square linha1 coluna2"></i></span>
+						<span><i class="bi bi-arrow-down-square linha1 coluna2"></i></span>
 					</div>
 				</div>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fuga pariatur recusandae! Dolorem a animi saepe impedit? Corporis voluptas libero vero cumque error eos tempore quae, ipsa id voluptates? Cupiditate.
 			</article>
-			<article>
-				<h3 class="titulo_artigo">Newsticker</h3>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fuga pariatur recusandae! Dolorem a animi saepe impedit? Corporis voluptas libero vero cumque error eos tempore quae, ipsa id voluptates? Cupiditate.
-			</article>
-			<article>
-				<h3 class="titulo_artigo">Calendar</h3>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fuga pariatur recusandae! Dolorem a animi saepe impedit? Corporis voluptas libero vero cumque error eos tempore quae, ipsa id voluptates? Cupiditate.
+			<article class="artigo">
+				<div class="artigo_titulo clearfix">
+					<h2>Calendar</h2>
+					<i class="bi bi-calendar3"></i>
+					<a href="" class="atalho_artigo">Events ></a>
+				</div>
+				<div class="artigo_conteudo">
+					<p class="linha1 coluna1">25 - 26 January 2012</p>
+					<p class="linha2 coluna1">02 - 03 February 2012</p>
+					<p class="linha3 coluna1">14 - 16 March 2012</p>
+					<a href="" class="linha1 coluna2">TUI Congress, Limerick</a>
+					<a href="" class="linha2 coluna2">Migrant Education 8th Annual Conference, RDS Dubiln</a>
+					<a href="" class="linha3 coluna2">Patronage Forum, Dublin Castle</a>
+				</div>
 			</article>
 		</section>
 		<section class="otherside">
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem expedita velit, excepturi dicta totam id est aut consectetur, quidem incidunt voluptatum illum, quasi facere quaerat tempora nulla vel possimus?
+			<div class="spotlight">
+				<div class="text_spotlight">
+					<h2>Main spotlight</h2>
+					<p>The main spotlight shows multiple items in rotation</p>
+				</div>
+				<div class="botoes_nav">
+					<span><i class="bi bi-circle"></i></span>
+					<span><i class="bi bi-circle"></i></span>
+					<span><i class="bi bi-circle"></i></span>
+					<span><i class="bi bi-circle"></i></span>
+					<span><i class="bi bi-pause-btn"></i></span>
+				</div>
+			</div>
+			<div class="spotlightmenor clearfix">
+				<img src="./iff_centro.png" alt="" class="">
+				<h3 class="">Title of first small spotlight</h3>
+			</div>
+			<div class="spotlightmenor clearfix">
+				<img src="./vacina.png" alt="" class="">
+				<h3 class="">Second minor spotlight title</h3>
+			</div>
+
 		</section>
 	</main>
 	<footer>
-
+		<div class="menus_footer">
+			<ul class="menu_footer">
+				<li class="menu_item">Feedback</li>
+				<li class="menu_item">Using the Website</li>
+				<li class="menu_item">Accessibility Statment</li>
+				<li class="menu_item">www.Gov.ie</li>
+			</ul>
+		</div>
+		<div class="btn_topo">
+			<p><i class="bi bi-arrow-up-square"></i><br/>page top</p>
+		</div>
+		<div class="departamento"><p>Department of Education and Skills | An Roin Oideachais Agus Scileanna</p></div>
 	</footer>
 </body>
 </html>

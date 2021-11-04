@@ -2,10 +2,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Caveat', cursive;
+	font-family: 'Kalam', cursive;
 }
 
 body {
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 }
 header {
@@ -17,7 +19,6 @@ header {
 	grid-column: 1;	
 }
 .logo {
-	width: 100px;
 	height: 100px;
 	margin-top: 23px;
 }
@@ -126,38 +127,165 @@ aside {
 }
 
 .artigos {
-	grid-column: 2;
 	width: 100%;
 }
 
 .artigo {
 	background-color: lightgray;
-
+	padding: 15px;
+	margin-bottom: 15px;
 }
 
-.artigo h3 {
-	display: inline;
+.clearfix::before, .clearfix::after {
+	content: ' ';
+	display: table;
 }
 
-.artigo a {
-	display: inline;
-}
-
-.artigo i {
-	display: inline;
+.clearfix::after {
+	clear: both;
 }
 
 .artigo_titulo {
-	justify-content: space-between;
+	margin-bottom: 10px;
 }
 
+.artigo_titulo h2 {
+	float: left;
+}
+
+.artigo_titulo i {
+	float: right;
+	margin-left: 3px;
+}
+.artigo_titulo a {
+	float: right;
+}
 .artigo_conteudo {
+	clear: left;
 	display: grid;
-	grid-template: 1fr auto / auto 1fr 1fr 1fr;
+	grid-template: 1fr auto / auto 1fr;
+	column-gap: 7px;
 }
 
-
+#imagem_artigo {
+	width: 100px;
+	margin: auto;
+}
 
 .otherside {
 	grid-column: 3;
+}
+
+.linha1 {
+	grid-row: 1;
+}
+
+.linha2 {
+	grid-row: 2
+}
+
+.linha3 {
+	grid-row: 3
+}
+
+.linha4 {
+	grid-row: 4
+}
+
+.coluna1 {
+	grid-column: 1;
+	text-align: right;
+}
+
+.coluna2 {
+	grid-column: 2;
+	text-align: left;
+}
+
+#conteudo_newsletter p {
+	text-align: left;
+}
+
+#conteudo_newsletter span {
+	float: right;
+	clear: left;
+}
+
+.spotlight {
+	width: 100%;
+	background-image: url("./imagem2.jpeg");
+	padding-top: 100px;
+	position: relative;
+}
+
+.botoes_nav {
+	padding: 5px;
+	position: bottom;
+	text-align: right;
+	font-weight: bolder;
+	font-size: large;
+}
+
+.text_spotlight {
+	background: rgb(211, 211, 211, 0.5);
+	padding: 5px;
+	margin-left: 25px;
+	margin-right: 0px;
+	margin-bottom: 50px;
+	flex: right;
+	clear: right;
+}
+
+.spotlightmenor {
+	padding: 10px;
+	background-color: lightgray;
+	margin-top: 20px;
+}
+
+.spotlightmenor img {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+}
+
+.spotlightmenor h3 {
+	margin-top: 10px;
+}
+
+footer {
+	width: 100%;
+	border-top: 2px solid gray;
+	display: grid;
+	grid-template-columns: 1fr / 1fr auto 1fr;
+	column-gap: auto;
+	padding-bottom: 45px;
+}
+
+.menu_footer {
+	margin: 10px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.btn_topo {
+	grid-row: 1;
+	grid-column: 2;
+	text-align: center;
+	align-items: center;
+}
+
+.departamento {
+	grid-row: 1;
+	grid-column: 3;
+	margin: 10px 0;
+}
+
+.departamento p {
+	text-align: right;
+}
+.menu_footer>.menu_item {
+	padding: 3px 5px;
 }
