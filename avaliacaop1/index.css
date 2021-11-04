@@ -61,6 +61,14 @@ header {
 	clear: both;
 }
 
+#find_school {
+	width: 100px;
+}
+
+#site_search_ok{
+	width: 40px;
+}
+
 .search a {
 	float: right;
 	display: block;
@@ -253,6 +261,7 @@ aside {
 }
 
 footer {
+	margin-top: 20px;
 	width: 100%;
 	border-top: 2px solid gray;
 	display: grid;
@@ -288,4 +297,14 @@ footer {
 }
 .menu_footer>.menu_item {
 	padding: 3px 5px;
+}
+
+.btn_topo a {
+	text-decoration: none;
+	color: black;
+}
+
+.clicavel:hover {
+	cursor: pointer;
+	transform: scale(1.05);
 }
