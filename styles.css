@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'PT Serif', serif;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+header {
+    background: rgb(77,189,212);
+    background: linear-gradient(45deg, rgba(77,189,212,1) 0%, rgba(8,121,180,1) 46%, rgba(73,66,203,1) 100%);
+    padding: 2em;
+    height: 14em;
+}
+
+main {
+    padding: 4em;
+    padding-top: 5em;
+    
+}
+
+#profile_picture {
+    width: 16em;
+    height: 16em;
+    border-radius: 50%;
+    overflow: hidden;
+    border: .6em solid white;
+    margin: 0 auto;
+}
+
+#profile_picture img {
+    width: 26em;
+    object-position: -3em;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+footer h3 {
+    text-align: center;
+    margin: 2em auto;
+}
+#icons_authors {
+    font-size: 0.8em;
+    margin-left: auto;
+}
+
+#icons_authors a {
+    font-size: 1em;
+}
+
+#contacts {
+    margin-left: auto;
+}
+
+.contact_link {
+    float:left;
+    margin-right: 0.5em;
+    width: 2.8em;
+    height: 2.8em;
+    background: rgb(0,155,186);
+    background: linear-gradient(135deg,rgba(100,189,207,1) 0%, rgba(110,110,203,1) 50%, rgba(111,106,208,1) 100%);
+    position: relative;
+}
+
+.contact_link:nth-child(1) {
+    border-radius: 36% 64% 27% 73% / 67% 46% 54% 33% ;
+}
+
+.contact_link:nth-child(2) {
+    border-radius: 35% 65% 13% 87% / 50% 43% 57% 50%;
+}
+
+.contact_link:nth-child(3) {
+    border-radius: 68% 32% 72% 28% / 50% 43% 57% 50%;
+}
+
+.contact_link:nth-child(4) {
+    border-radius: 77% 40% 13% 87% / 74% 43% 57% 26%;
+}
+
+.contact_link img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.5em;
+}
