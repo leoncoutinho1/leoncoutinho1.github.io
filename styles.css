@@ -35,9 +35,6 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 header {
@@ -47,8 +44,15 @@ header {
     height: 14em;
 }
 
+#flex-space-between {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 main {
-    padding: 4em;
+    padding: 0 4em;
     padding-top: 5em;
 }
 
@@ -95,7 +99,6 @@ main p {
 
 #title {
     text-align: center;
-    margin-bottom: 2em;
 }
 
 h1 {
