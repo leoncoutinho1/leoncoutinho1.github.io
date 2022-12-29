@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'PT Serif', serif;
     font-weight: 500;
 }
@@ -23,7 +23,33 @@ header {
 main {
     padding: 4em;
     padding-top: 5em;
-    
+    background-color: rgb(226, 236, 240);
+    min-height: 60vh;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+#resume {
+    position: absolute;
+    border: .1em solid rgba(0,0,0,.37);
+    border-radius: 1em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255,255,255,.3));
+    backdrop-filter: blur;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,.37);
+    padding: 3em;
+    z-index: 1;
+    margin-right: 4em;
+}
+
+#left_img {
+    width: 25em;
+    opacity: .5;
+    float: left;
+    position: absolute;
+    z-index: 0;
 }
 
 #profile_picture {
@@ -57,9 +83,31 @@ h3 {
     font-size: 1.1em;
 }
 footer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 2em;
+    /* background: rgb(77,189,212); */
+    /* background: linear-gradient(45deg, rgba(77,189,212,1) 0%, rgba(8,121,180,1) 46%, rgba(73,66,203,1) 100%); */
+}
+
+#footer_bg_image {
+    position: absolute;
+    top: -20em;
+    left: 0;
+    max-width: 100%;
+    min-width: 1200px;
+    object-fit: cover;
+    opacity: .5;
+    z-index: 0;
+}
+
+#footer_elements {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 footer h3 {
@@ -81,9 +129,9 @@ footer h3 {
 
 .contact_link {
     float:left;
-    margin-right: 0.5em;
-    width: 2.8em;
-    height: 2.8em;
+    margin-right: 1em;
+    width: 3.5em;
+    height: 3.5em;
     background: rgb(0,155,186);
     background: linear-gradient(135deg,rgba(100,189,207,1) 0%, rgba(110,110,203,1) 50%, rgba(111,106,208,1) 100%);
     position: relative;
@@ -110,5 +158,5 @@ footer h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1.5em;
+    width: 2em;
 }
