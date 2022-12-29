@@ -7,10 +7,37 @@
     font-weight: 500;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+    * {
+        font-size: 14px;
+    }
+}
+@media (max-width: 800px) {
     * {
         font-size: 12px;
     }
+}
+@media (max-width: 600px) {
+    * {
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px) {
+    * {
+        font-size: 9px;
+    }
+}
+@media (max-width: 400px) {
+    * {
+        font-size: 8px;
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -23,12 +50,18 @@ header {
 main {
     padding: 4em;
     padding-top: 5em;
-    background-color: rgb(226, 236, 240);
 }
 
 main p {
     text-align: justify;
     text-indent: 2em;
+    font-size: 1em;
+}
+
+@media (min-width: 1000px) {
+    main p {
+        font-size: 1.3em;
+    }
 }
 
 #content {
@@ -38,10 +71,12 @@ main p {
 
 #resume {
     padding: 3em;
+    display: flex;
+    align-items: center;
 }
 
 #left_img {
-    width: 25em;
+    width: 25%;
 }
 
 #profile_picture {
