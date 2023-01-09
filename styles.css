@@ -183,6 +183,10 @@ footer h3 {
     border-radius: 77% 40% 13% 87% / 74% 43% 57% 26%;
 }
 
+.contact_link:nth-child(5) {
+    border-radius: 50% 43% 57% 50% / 35% 65% 13% 87%;
+}
+
 .contact_link img {
     position: absolute;
     top: 50%;
