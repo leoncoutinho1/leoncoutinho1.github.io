@@ -17,6 +17,13 @@ body {
     justify-content: space-between;
 }
 
+@media(min-width: 800px) {
+    body {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
 header {
     color:rgb(0, 255, 17); 
     display: block;
