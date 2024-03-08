@@ -4,55 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>leonardocoutinho.dev</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio - Leonardo Coutinho</title>
 </head>
 <body>
     <header>
-        <div id="profile_picture">
-            <img src="./IMG_20201113_134954.jpg" alt="foto de perfil">
-        </div>
+        <nav-bar>
+            <div class="logo">
+                <img src="./logo.png" alt="Logo da empresa leonardocoutinho.dev">
+                <h3>leonardocoutinho.dev</h3>
+            </div>
+            <nav-menu>
+                <nav-item><a href="#projetos">Projetos</a></nav-item>
+                <nav-item><a href="#sobre">Sobre mim</a></nav-item>
+                <nav-item><a href="#contatos">Contatos</a></nav-item>
+            </nav-menu>
+        </nav-bar>
     </header>
-    <section id="flex-space-between">
-        <main>
-            <div id="title">
-                <h1>Leonardo Coutinho</h1>
-                <h2>Analista Desenvolvedor - Programador - Software Developer</h2>
-                <h3>C# - .Net Core - MySQL - Vue - Angular</h3>
-            </div>
-            <div id="content">
-                <img id="left_img" src="Operating system-rafiki.svg" alt="desenvolvimento de software">
-                <div id="resume">
-                    <p>Sou um apaixonado por programação com muita vontade de aprender e sem medo de falar "não sei". Formado Analista de Sistemas trabalhei durante muito tempo como analista de suporte mas, sempre buscando iniciar minha carreira na área de programação. Após uma passagem pelo mundo SAP atuando com programação ABAP estou finalmente trilhando minha carreira, agora trabalhando principalmente com C# (.Net Core) e SQL. Meu foco é backend mas tenho conhecimento em frontend com VueJs, React e Angular. Tenho experiência utilizando tecnologias como Identity, Entity Framework, MySQL, Git/Git Flow, Bitbucket Pipelines, HTML, CSS, Javascript, MongoDB, PrimeVue além de ter atuado em times Scrum. Também tenho conhecimento em Websockets, Docker, NodeJs, Testes Unitários (xUnit), Golang e RabbitMQ.</p>
+    <main>
+        <section class="container" id="projetos">
+            <h2 class="section-title">
+                Projetos
+            </h2>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="project" id="slide-1">
+                        <div class="project-title">
+                            Angular Kanban
+                        </div>
+                        <div class="project-image">
+                            <a href="https://github.com/leoncoutinho1/angular_kanban">
+                                <img src="./1709495819487.png" alt="">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            A kanban with draggable cards made with Angular CDK
+                        </div>
+                    </div>
+                    <div class="project" id="slide-2">
+                        <div class="project-title">
+                            WeatherApp
+                        </div>
+                        <div class="project-image">
+                            <a href="https://github.com/leoncoutinho1/weather-app">
+                                <img src="./1709564524388.png" alt="">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            A dashboard that show weather informations from OpenWeatherApi
+                        </div>
+                    </div>
+                    <div class="project" id="slide-3">
+                        <div class="project-title">
+                            GiftList API
+                        </div>
+                        <div class="project-image">
+                            <a href="https://github.com/leoncoutinho1/giftlist_api">
+                                <img src="./nodejs_mongodb.png" alt="">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            A api for a multitenant giftlist when users can signature gifts
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
                 </div>
             </div>
-        </main>
-        <footer>
-            <img id="footer_bg_image" src="bright-blue-icons-next-to-a-cup-of-coffee-and-laptop.jpg" alt="coffee and laptop">
-            <div id="footer_elements">
-                <div>
-                    <h3>Fique à vontade para seguir meu perfil ou entrar em contato pelos links abaixo.</h3>
-                </div>
-                <div id="contacts">
-                    <a href="https://api.whatsapp.com/send?phone=5522992884103" class="contact_link"><img src="001-whatsapp.png" alt=""></a>
-                    <a href="https://stackexchange.com/users/15991963/coutinho?tab=accounts" class="contact_link"><img src="002-stack-overflow.png" alt=""></a>
-                    <a href="https://github.com/leoncoutinho1" class="contact_link"><img src="003-github.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/leoncoutinho1/" class="contact_link"><img src="004-linkedin.png" alt=""></a>
-                    <a href="mailto:me@leonardocoutinho.dev" class="contact_link"><img src="envelope.png" alt=""></a>
-                </div>
-                <div id="icons_authors">
-                    Icons made by 
-                    <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-                </div>
-                <div id="icons_authors">Icons made by <a href="https://www.flaticon.com/authors/laisa-islam-ani" title="Laisa Islam Ani">Laisa Islam Ani</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-                <div id="icons_authors"><a href="https://br.freepik.com/vetores-gratis/ilustracao-do-conceito-de-sistema-operacional_8497398.htm#query=software&position=1&from_view=search&track=sph">Imagem de storyset</a> no Freepik</div>
-                <div id="icons_authors"><a href="https://br.freepik.com/fotos-gratis/icones-azuis-brilhantes-ao-lado-de-uma-xicara-de-cafe-e-laptop_902706.htm#query=software%20and%20waterfall&position=38&from_view=search&track=ais">Imagem de creativeart</a> no Freepik</div>
+        </section>
+        <section class="sobre" id="sobre">
+            <h2 class="section-title">Sobre mim</h2>
+            <p class="sobre-description">
+                Sou um apaixonado por programação com muita vontade de aprender e sem medo de falar "não sei". Formado Analista de Sistemas trabalhei durante muito tempo como analista de suporte mas, sempre buscando iniciar minha carreira na área de programação. Após uma passagem pelo mundo SAP atuando com programação ABAP estou finalmente trilhando minha carreira, agora trabalhando principalmente com C# (.Net Core) e SQL. Meu foco é backend mas tenho conhecimento em frontend com VueJs, React e Angular. Tenho experiência utilizando tecnologias como Identity, Entity Framework, MySQL, Git/Git Flow, Bitbucket Pipelines, HTML, CSS, Javascript, MongoDB, PrimeVue além de ter atuado em times Scrum. Também tenho conhecimento em Websockets, Docker, NodeJs, Testes Unitários (xUnit), Golang e RabbitMQ.
+            </p>
+        </section>
+        <section class="contatos" id="contatos">
+            <h2 class="section-title">Contatos</h2>
+            <div class="contatos-description">
+                <p>
+                    Precisando desenvolver alguma aplicação e achou meus projetos interessantes?
+                </p>
+                <p>
+                    Fique à vontade para me contatar no <a href="https://www.linkedin.com/in/leoncoutinho1/" target="_blank">linkedin</a> ou no e-mail me@leonardocoutinho.dev.
+                </p>
+                <p>
+                    Se quiser conhecer mais projetos meus eles se encontram no <a href="https://github.com/leoncoutinho1" target="_blank">github</a>.
+                </p>
             </div>
-        </footer>
-    </section>
+        </section>
+    </main>
+    <footer>
+        <p>leonardocoutinho.dev © 2024</p>
+    </footer>
+    
 </body>
 </html>
